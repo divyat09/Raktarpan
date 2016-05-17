@@ -309,7 +309,7 @@ a:hover, a:focus, a:active {
   margin-bottom: 30px;
   margin-left: 150px;
   width:290px;
-  height:700px;
+  height:650px;
   border: 2px solid #1f76bd;
   -moz-transition: all, 0.3s;
   -o-transition: all, 0.3s;
@@ -332,6 +332,10 @@ a:hover, a:focus, a:active {
   font-size: 13px;
   margin-bottom: 15px;
   min-height: 115px;
+}
+.program .program-buttons {
+  text-align: center;
+  margin-bottom: 12px; 
 }
 .program:hover {
   background: #f0f0f0;
