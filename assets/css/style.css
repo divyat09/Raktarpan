@@ -194,8 +194,10 @@ a:hover, a:focus, a:active {
 .about-us-col .col-details {
   text-align: justify;
   margin-bottom: 25px;
-  min-height: 80px;
+  min-height: 100px;
 }
+
+
 
 /* home/reasons 
 ================================= */
