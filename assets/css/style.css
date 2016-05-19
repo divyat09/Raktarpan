@@ -462,7 +462,7 @@ a:hover, a:focus, a:active {
 .page-heading {
   background: url('../images/heading-bg.jpg?1428795369') no-repeat center;
   background-size: cover;
-  min-height: 190px;
+  min-height: 600px;
   color: #fff;
   padding: 25px 15px;
   margin-bottom: 50px;
@@ -473,6 +473,7 @@ a:hover, a:focus, a:active {
 
 .page-description {
   font-size: 18px;
+  text-align: justify;
 }
 
 .main-container {
