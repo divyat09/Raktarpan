@@ -40,7 +40,7 @@ a:hover, a:focus, a:active {
 }
 
 .navbar-top {
-  background: #115c9b;
+  background: #e60000;
   font-size: 12px;
   padding: 3px 0;
 }
@@ -57,7 +57,7 @@ a:hover, a:focus, a:active {
 .navbar-main {
   margin-bottom: 0;
   color: #fff;
-  background: #1f76bd;
+  background: #ff1a1a;
 }
 .navbar-main .navbar-brand {
   border-bottom: none !important;
@@ -73,7 +73,7 @@ a:hover, a:focus, a:active {
 .navbar-main .submenu {
   position: absolute;
   list-style: none;
-  background: #1f76bd;
+  background: #ff1a1a;  /*#1f76bd*/
   padding: 0;
   width: 150px;
   left: -35px;
@@ -85,10 +85,10 @@ a:hover, a:focus, a:active {
   transition: all, 0.05s;
 }
 .navbar-main .submenu li {
-  border-top: 1px solid #185b91;
+  border-top: 1px solid #e60000;
 }
 .navbar-main .submenu li:hover {
-  background: #185b91;
+  background: #e60000;
   -moz-transition: all, 0.3s;
   -o-transition: all, 0.3s;
   -webkit-transition: all, 0.3s;
@@ -126,7 +126,7 @@ a:hover, a:focus, a:active {
   width: 100%;
 }
 .carousel-home .carousel-control {
-  background: #1f76bd;
+  background: #e60000;
   height: 80px;
   width: 40px;
   top: 50%;
@@ -462,7 +462,7 @@ a:hover, a:focus, a:active {
 .page-heading {
   background: url('../images/heading-bg.jpg?1428795369') no-repeat center;
   background-size: cover;
-  min-height: 600px;
+  /*min-height: 600px;*/
   color: #fff;
   padding: 25px 15px;
   margin-bottom: 50px;
@@ -474,6 +474,8 @@ a:hover, a:focus, a:active {
 .page-description {
   font-size: 18px;
   text-align: justify;
+  margin-left: 350px;
+  margin-right: 350px;
 }
 
 .main-container {
@@ -547,6 +549,8 @@ form .alert {
   -webkit-transition: all, 0.3s;
   transition: all, 0.3s;
 }
+
+
 .btn-primary:hover {
   background: #fff;
   color: #1f76bd;
