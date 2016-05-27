@@ -3,8 +3,8 @@
 /* =====================================================
  * change this to the email you want the form to send to
  * ===================================================== */
-$email_to = "you@company.pw"; 
-$email_from = "webmaster@company.pw"; // must be different than $email_from 
+$email_to = "divyatmahajan@gmail.com"; 
+$email_from = "divyatm@iitk.ac.in"; // must be different than $email_from 
 $email_subject = "Contact Form submitted";
 
 if(isset($_POST['email']))
@@ -13,7 +13,8 @@ if(isset($_POST['email']))
     function return_error($error)
     {
         echo json_encode(array('success'=>0, 'message'=>$error));
-        die();
+	 echo "error" 
+       die();
     }
 
     // check for empty required fields
@@ -30,7 +31,7 @@ if(isset($_POST['email']))
     $message = $_POST['message']; // required
 
     // form validation
-    $error_message = "";
+    $error_message = "You have an error message could not be sent";
 
     // name
     $name_exp = "/^[a-z0-9 .\-]+$/i";
@@ -70,13 +71,15 @@ if(isset($_POST['email']))
     $headers = 'From: '.$email_from."\r\n".
     'Reply-To: '.$email."\r\n" .
     'X-Mailer: PHP/' . phpversion();
-    if (@mail($email_to, $email_subject, $email_message, $headers))
+    if (@mail($email_to, $email_message, $email_message, $headers))
     {
+	 echo "SUCCESS"
         echo json_encode(array('success'=>1, 'message'=>'Form submitted successfully.')); 
     }
 
     else 
     {
+	echo "ERROR"
         echo json_encode(array('success'=>0, 'message'=>'An error occured. Please try again later.')); 
         die();        
     }
